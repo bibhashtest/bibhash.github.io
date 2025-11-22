@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+    <h1>Bibhash Resume</h1>
+  
+<head>
+    <meta charset="UTF-8">
+    <title>Bibhash Kumar | QA Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: #2e3e6b linear-gradient(135deg, #122040 0%, #2e3e6b 100%);
+            color: #f8f9fa;
+            overflow-x: hidden;
+        }
+		
+        header {
+            padding: 60px 0 30px 0;
+            text-align: center;
+            background: linear-gradient(90deg, #2e5d6b 50%, #03dac6 100%);
+            color: #fff;
+            position: relative;
+            animation: slideDown 1.2s cubic-bezier(0.6,0.01,0.37,0.97);
+        }
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-120px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        h1 { margin: 0 0 12px 0; font-size: 2.7em; letter-spacing: 2px;}
+        .contact-info { margin-top: 14px;}
+        .contact-info span { background: #181d35; color: #03dac6; padding: 7px 13px; border-radius: 12px; margin: 0 6px;}
+        .section { max-width: 900px; margin: 38px auto 0 auto; padding: 0 25px;}
+        .card-list { display: flex; flex-wrap: wrap; gap: 36px; justify-content: center;}
+        .portfolio-card {
+            background: #222b45;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px #1378f74d;
+            padding: 32px 22px;
+            flex: 1 1 375px;
+            min-width: 290px;
+            transition: transform 0.22s, box-shadow 0.22s;
+            opacity: 0;
+            transform: translateY(30px) scale(0.97);
+            animation: fadePortfolioCard 0.9s forwards;
+        }
+        @keyframes fadePortfolioCard {
+            from { opacity: 0; transform: translateY(30px) scale(0.97);}
+            to { opacity: 1; transform: translateY(0) scale(1.01);}
+        }
+        .portfolio-card:hover {
+            transform: scale(1.04) translateY(-5px);
+            box-shadow: 0 16px 48px #2e3e6b60;
+        }
+        .portfolio-card h2 {
+            color: #03dac6;
+            margin: 0 0 6px 0;
+            font-size: 1.3em;
+        }
+        .skills {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 32px;
+        }
+        .skill-circle {
+            width: 110px; height: 110px; border-radius: 50%; background: #181d35;
+            display: flex; align-items: center; justify-content: center; flex-direction: column;
+            box-shadow: 0 4px 20px #03dac660;
+            position: relative;
+            opacity: 0;
+            animation: popSkillCircle 1.2s forwards;
+            margin-bottom: 10px;
+        }
+        @keyframes popSkillCircle {
+            from { opacity: 0; transform: scale(0.85);}
+            to { opacity: 1; transform: scale(1.07);}
+        }
+        .skill-value {
+            background: linear-gradient(90deg, #2978f7, #03dac6);
+            color: #fff;
+            border-radius: 48px;
+            padding: 10px 19px;
+            font-size: 1.6em;
+            font-weight: bold;
+            box-shadow: 0 2px 8px #181d3580;
+        }
+        .skill-name { margin-top: 5px; font-size: 1.05em; color: #03dac6;}
+        .projects-gallery {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+        .project-img-card {
+            background: #2978f7;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px #03dac640;
+            width: 220px; height: 150px;
+            display: flex; align-items: center; justify-content: center;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.23s;
+        }
+        .project-img-card:hover { transform: scale(1.08); }
+        .project-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.92;
+        }
+        .project-desc {
+            position: absolute;
+            bottom: 0; left: 0; right:0;
+            background: rgba(15,22,36,0.96);
+            color: #03dac6;
+            width: 100%; padding: 8px 11px; font-size: 1em;
+            border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;
+            opacity: 0;
+            transition: opacity 0.14s;
+        }
+        .project-img-card:hover .project-desc { opacity: 1;}
+        .timeline {
+            border-left: 3px solid #2978f7;
+            padding-left: 25px;
+            margin-top: 24px;
+        }
+        .timeline-entry {
+            margin-bottom: 22px;
+        }
+        .timeline-entry .job-title { color: #03dac6; font-weight: bold;}
+        .footer { text-align: center; padding: 38px 0 22px 0; color: #999;}
+        @media (max-width: 700px) {
+            header {padding: 46px 0 18px 0;}
+            .section {padding: 0 7px;}
+            .card-list {flex-direction: column;}
+            .skills {gap: 13px;}
+            .projects-gallery {flex-direction: column; gap: 15px;}
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Bibhash Kumar</h1>
+        <div>Sr.QA Engineer | Bangalore | 7+ Years</div>
+        <div class="contact-info">
+            <span>Email: vivash2009@gmail.com</span>
+            <span>Mobile: +91-9886518198</span>
+            <span>LinkedIn:www.linkedin.com/in/bibhashk94</span>
+        </div>
+    </header>
+    <div class="section card-list">
+        <div class="portfolio-card" style="animation-delay:0.2s">
+            <h2>About Me</h2>
+            <p>
+                Innovative QA professional with 7 years in Healthcare and Banking domains. Adept at Web Services, Automation & API Testing, Selenium, and front-end troubleshooting. Known for collaborative problem-solving in Agile teams.
+            </p>
+        </div>
+        <div class="portfolio-card" style="animation-delay:0.4s">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <div class="skill-circle" style="animation-delay:0.2s">
+                    <div class="skill-value">92%</div>
+                    <div class="skill-name">Automation</div>
+                </div>
+                <div class="skill-circle" style="animation-delay:0.4s">
+                    <div class="skill-value">87%</div>
+                    <div class="skill-name">API Testing</div>
+                </div>
+                <div class="skill-circle" style="animation-delay:0.5s">
+                    <div class="skill-value">81%</div>
+                    <div class="skill-name">Frontend Dev</div>
+                </div>
+                <div class="skill-circle" style="animation-delay:0.6s">
+                    <div class="skill-value">84%</div>
+                    <div class="skill-name">SQL/DB</div>
+                </div>
+                <div class="skill-circle" style="animation-delay:0.7s">
+                    <div class="skill-value">94%</div>
+                    <div class="skill-name">Agile/Scrum</div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-card" style="animation-delay:0.7s">
+            <h2>Project Highlights</h2>
+            <div class="projects-gallery">
+                <div class="project-img-card">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?fit=crop&w=400&q=80" class="project-img" alt="eCaseLink" />
+                    <div class="project-desc">eCaseLink 8.0 – Healthcare EDC Automation</div>
+                </div>
+                <div class="project-img-card">
+                    <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?fit=crop&w=400&q=80" class="project-img" alt="Banking App" />
+                    <div class="project-desc">Banking Web Automation Suite</div>
+                </div>
+				<div class="project-img-card">
+					<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?fit=crop&w=400&q=80" class="project-img" alt="Application Programming Interface" />
+					<div class="project-desc">REST & GraphQL API Test Automation</div>
+				</div>
+                <div class="project-img-card">
+				<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?fit=crop&w=400&q=80" class="project-img" alt="Mobile Automation" />
+				<div class="project-desc">Mobile Automation for App Testing</div>
+		</div>
+            </div>
+        </div>
+    </div>
+    <div class="section timeline" style="animation-delay:1.2s">
+        <h2>Career Timeline</h2>
+        <div class="timeline-entry">
+            <div class="job-title">Programmer Analyst | Cognizant Technology Solutions</div>
+            <div class="job-period">Dec 2020 – Present</div>
+        </div>
+        <div class="timeline-entry">
+            <div class="job-title">Quality Control Associate | India Document Solution Pvt Ltd</div>
+            <div class="job-period">Aug 2018 – Sep 2020</div>
+        </div>
+    </div>
+    <div class="section" style="animation-delay:1.5s">
+        <h2>Education & Certification</h2>
+        <ul>
+            <li>B.E. – Radharaman Engineering College, RGPV Bhopal</li>
+            <li>Scrum Fundamentals Certified</li>
+        </ul>
+    </div>
+    <div class="section" style="animation-delay:1.6s">
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: vivash2009@gmail.com</li>
+            <li>Mobile: +91-9886518198</li>
+            <li>Location: Bangalore, India</li>
+        </ul>
+    </div>
+    <div class="footer">
+        &copy; 2025 Bibhash Kumar | Portfolio | Last updated Nov 2025
+    </div>
+    <!-- Javascript for staggered animation delay -->
+    <script>
+        // Dynamically trigger cards and skill circles at staggered intervals
+        document.querySelectorAll('.portfolio-card').forEach(function(card, i) {
+            setTimeout(() => {
+                card.style.opacity = 1;
+                card.style.transform = "translateY(0) scale(1.01)";
+            }, (i+1)*190+300);
+        });
+        document.querySelectorAll('.skill-circle').forEach(function(sc, i) {
+            setTimeout(() => {
+                sc.style.opacity = 1;
+                sc.style.transform = "scale(1.07)";
+            }, (i+1)*180+500);
+        });
+    </script>
+</body>
+</html>
+
+</body>
+</html>
+
+
+</body>
+</html>
