@@ -1,270 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-<body>
-    <h1>Bibhash Resume</h1>
-  
-<head>
-    <meta charset="UTF-8">
-    <title>Bibhash Kumar | QA Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Montserrat', Arial, sans-serif;
-            background: #2e3e6b linear-gradient(135deg, #122040 0%, #2e3e6b 100%);
-            color: #f8f9fa;
-            overflow-x: hidden;
-        }
-		
-        header {
-            padding: 60px 0 30px 0;
-            text-align: center;
-            background: linear-gradient(90deg, #2e5d6b 50%, #03dac6 100%);
-            color: #fff;
-            position: relative;
-            animation: slideDown 1.2s cubic-bezier(0.6,0.01,0.37,0.97);
-        }
-        @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-120px);}
-            to { opacity: 1; transform: translateY(0);}
-        }
-        h1 { margin: 0 0 12px 0; font-size: 2.7em; letter-spacing: 2px;}
-        .contact-info { margin-top: 14px;}
-        .contact-info span { background: #181d35; color: #03dac6; padding: 7px 13px; border-radius: 12px; margin: 0 6px;}
-        .section { max-width: 900px; margin: 38px auto 0 auto; padding: 0 25px;}
-        .card-list { display: flex; flex-wrap: wrap; gap: 36px; justify-content: center;}
-        .portfolio-card {
-            background: #222b45;
-            border-radius: 18px;
-            box-shadow: 0 8px 32px #1378f74d;
-            padding: 32px 22px;
-            flex: 1 1 375px;
-            min-width: 290px;
-            transition: transform 0.22s, box-shadow 0.22s;
-            opacity: 0;
-            transform: translateY(30px) scale(0.97);
-            animation: fadePortfolioCard 0.9s forwards;
-        }
-        @keyframes fadePortfolioCard {
-            from { opacity: 0; transform: translateY(30px) scale(0.97);}
-            to { opacity: 1; transform: translateY(0) scale(1.01);}
-        }
-        .portfolio-card:hover {
-            transform: scale(1.04) translateY(-5px);
-            box-shadow: 0 16px 48px #2e3e6b60;
-        }
-        .portfolio-card h2 {
-            color: #03dac6;
-            margin: 0 0 6px 0;
-            font-size: 1.3em;
-        }
-        .skills {
-            display: flex;
-            gap: 32px;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 32px;
-        }
-        .skill-circle {
-            width: 110px; height: 110px; border-radius: 50%; background: #181d35;
-            display: flex; align-items: center; justify-content: center; flex-direction: column;
-            box-shadow: 0 4px 20px #03dac660;
-            position: relative;
-            opacity: 0;
-            animation: popSkillCircle 1.2s forwards;
-            margin-bottom: 10px;
-        }
-        @keyframes popSkillCircle {
-            from { opacity: 0; transform: scale(0.85);}
-            to { opacity: 1; transform: scale(1.07);}
-        }
-        .skill-value {
-            background: linear-gradient(90deg, #2978f7, #03dac6);
-            color: #fff;
-            border-radius: 48px;
-            padding: 10px 19px;
-            font-size: 1.6em;
-            font-weight: bold;
-            box-shadow: 0 2px 8px #181d3580;
-        }
-        .skill-name { margin-top: 5px; font-size: 1.05em; color: #03dac6;}
-        .projects-gallery {
-            display: flex;
-            gap: 24px;
-            flex-wrap: wrap;
-            margin-top: 16px;
-        }
-        .project-img-card {
-            background: #2978f7;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px #03dac640;
-            width: 220px; height: 150px;
-            display: flex; align-items: center; justify-content: center;
-            position: relative;
-            cursor: pointer;
-            transition: transform 0.23s;
-        }
-        .project-img-card:hover { transform: scale(1.08); }
-        .project-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.92;
-        }
-        .project-desc {
-            position: absolute;
-            bottom: 0; left: 0; right:0;
-            background: rgba(15,22,36,0.96);
-            color: #03dac6;
-            width: 100%; padding: 8px 11px; font-size: 1em;
-            border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;
-            opacity: 0;
-            transition: opacity 0.14s;
-        }
-        .project-img-card:hover .project-desc { opacity: 1;}
-        .timeline {
-            border-left: 3px solid #2978f7;
-            padding-left: 25px;
-            margin-top: 24px;
-        }
-        .timeline-entry {
-            margin-bottom: 22px;
-        }
-        .timeline-entry .job-title { color: #03dac6; font-weight: bold;}
-        .footer { text-align: center; padding: 38px 0 22px 0; color: #999;}
-        @media (max-width: 700px) {
-            header {padding: 46px 0 18px 0;}
-            .section {padding: 0 7px;}
-            .card-list {flex-direction: column;}
-            .skills {gap: 13px;}
-            .projects-gallery {flex-direction: column; gap: 15px;}
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bibhash Kumar | SDET / Quality Engineer</title>
+<meta name="description" content="SDET with 7+ years in Java automation, API testing and CI/CD. Led QA teams of 5+, zero critical production defects, about 75 ms lower latency.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✅</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F1F5F7;--surface:#FFFFFF;--ink:#13202B;--muted:#4E6272;--line:#D3DDE3;--accent:#0B6E78;--on-accent:#FFFFFF;--pass:#1B7F45;--panel:#10222D;--panel-ink:#D6E6EC;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="midnight"]{--bg:#0D161C;--surface:#142029;--ink:#E6EEF2;--muted:#9FB3BF;--line:#26394A;--accent:#4CC3CF;--on-accent:#06242A;--pass:#4FD18B;--panel:#08111A}
+:root[data-theme="forest"]{--bg:#EDF3EE;--surface:#FFFFFF;--ink:#14261B;--muted:#4D6455;--line:#CCDCD0;--accent:#1F7A4D;--on-accent:#FFFFFF;--panel:#11271C}
+:root[data-theme="sunset"]{--bg:#FBF1EA;--surface:#FFFFFF;--ink:#2A1A14;--muted:#6E5548;--line:#EBD6C8;--accent:#B83C0A;--on-accent:#FFFFFF;--panel:#2A1710}
+:root[data-theme="violet"]{--bg:#14111F;--surface:#1D1830;--ink:#EEE9FF;--muted:#B1A6D6;--line:#33295A;--accent:#A78BFA;--on-accent:#171033;--pass:#6EE7B7;--panel:#0C0A16}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "IBM Plex Sans",system-ui,sans-serif}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+header.nav{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 0;gap:1rem;flex-wrap:wrap}
+.nav b{font:700 1.1rem "Bricolage Grotesque",sans-serif}
+.nav nav{display:flex;gap:1.1rem;flex-wrap:wrap;align-items:center}
+.nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.95rem}
+.nav a:hover{color:var(--ink)}
+#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:.3rem .8rem;font:inherit;font-size:.85rem;cursor:pointer}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:center;padding:3rem 0 4rem}
+h1{font:800 clamp(2.4rem,6vw,4rem)/1.04 "Bricolage Grotesque",sans-serif;margin:0 0 1rem;letter-spacing:-.02em}
+.lead{font-size:1.1rem;color:var(--muted);max-width:34rem;margin:0 0 1.6rem}
+.btns{display:flex;gap:.7rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.p{background:var(--accent);color:var(--on-accent)}
+.btn.s{color:var(--accent)}
+.run{background:var(--panel);color:var(--panel-ink);border-radius:12px;padding:1.1rem 1.2rem;font:400 .86rem/1.9 "IBM Plex Mono",monospace;min-height:20.5rem}
+.run .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem;color:#8FB0BD}
+.run button{background:#1D3A49;color:var(--panel-ink);border:0;border-radius:6px;padding:.25rem .7rem;font:inherit;cursor:pointer}
+.run .ok{color:#5FE0A0}
+.run .sum{margin-top:.6rem;padding-top:.6rem;border-top:1px solid #234052;color:#fff}
+section{padding:3.2rem 0;border-top:1px solid var(--line)}
+h2{font:700 1.8rem "Bricolage Grotesque",sans-serif;margin:0 0 1.4rem;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.2rem}
+.box h3{margin:0 0 .5rem;font:700 1.05rem "Bricolage Grotesque",sans-serif}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem}
+.tags span{border:1px solid var(--line);border-radius:6px;padding:.1rem .55rem;font-size:.85rem;color:var(--muted)}
+.job{display:grid;grid-template-columns:200px 1fr;gap:1.6rem;margin-bottom:2.4rem}
+.job .when{color:var(--muted);font-size:.92rem}
+.job h3{margin:0;font:700 1.25rem "Bricolage Grotesque",sans-serif}
+.job .co{color:var(--accent);font-weight:600;margin:.1rem 0 .6rem}
+.job ul{margin:0;padding-left:1.1rem}
+.job li{margin-bottom:.5rem;max-width:62ch}
+.contact a{font-size:1.15rem;font-weight:500}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.88rem;border-top:1px solid var(--line)}
+@media(max-width:780px){.hero{grid-template-columns:1fr;padding-top:1.5rem}.job{grid-template-columns:1fr;gap:.4rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{transition:background .3s,color .3s}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(60rem 28rem at 85% -5%,color-mix(in srgb,var(--accent) 16%,transparent),transparent 70%),radial-gradient(40rem 24rem at -10% 40%,color-mix(in srgb,var(--accent) 8%,transparent),transparent 70%)}
+.themes{display:flex;gap:.45rem;align-items:center}
+.sw{width:22px;height:22px;border-radius:50%;border:2px solid var(--line);cursor:pointer;padding:0}
+.sw[aria-pressed="true"]{outline:2px solid var(--ink);outline-offset:2px}
+.logo{display:inline-grid;place-items:center;width:2.1rem;height:2.1rem;border-radius:10px;background:var(--accent);color:var(--on-accent);font:800 .95rem "Bricolage Grotesque",sans-serif;margin-right:.55rem}
+.box{border-top:3px solid var(--accent)}
+.hero h1{background:linear-gradient(100deg,var(--ink) 55%,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+html{overflow-x:clip}
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,.42fr) minmax(0,.58fr);gap:3.5rem;align-items:center;padding:3.5rem 0 4.5rem}
+.hero::before{content:"";position:absolute;z-index:-1;top:1.5rem;bottom:0;left:calc(50% - 50vw);width:calc(50vw - 10%);background:color-mix(in srgb,var(--accent) 16%,var(--bg))}
+.card{background:var(--surface);border-radius:4px;box-shadow:0 18px 40px rgba(0,0,0,.14);padding:2.4rem 1.5rem 0;text-align:center}
+.avatar{position:relative;width:9.5rem;height:9.5rem;margin:0 auto 1.4rem;border-radius:50%;overflow:hidden;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;font:800 2.8rem "Bricolage Grotesque",sans-serif}
+.avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cname{font:800 1.8rem/1.1 "Bricolage Grotesque",sans-serif}
+.card hr{width:3.2rem;border:0;border-top:2px solid var(--accent);margin:1rem auto}
+.role{letter-spacing:.2em;text-transform:uppercase;font-size:.78rem;color:var(--muted)}
+.social{display:flex;justify-content:center;gap:1.4rem;margin:1.6rem -1.5rem 0;padding:.9rem 0;border-top:1px solid var(--line)}
+.social a{color:var(--ink);display:inline-flex}
+.intro h1{font:800 clamp(3.4rem,9vw,5.8rem)/1 "Bricolage Grotesque",sans-serif;background:none;color:var(--ink);-webkit-text-fill-color:currentColor;margin:0 0 .6rem}
+.sub{font-size:1.2rem;font-weight:500;margin:0 0 1.4rem}
+.pill{display:inline-block;padding:.5rem 1.6rem;border-radius:999px;border:2px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:600;font-size:.9rem}
+.pill.fill{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.intro .btns{margin-bottom:1.6rem}
+.intro p{max-width:46ch;color:var(--muted)}
+@media(max-width:780px){.hero{grid-template-columns:1fr;gap:2rem}.hero::before{bottom:auto;height:22rem;left:calc(50% - 50vw);width:100vw}.card{max-width:20rem;margin:0 auto}}
+.badge{display:inline-block;margin:0 0 1rem!important;padding:.25rem .8rem;border-radius:999px;background:color-mix(in srgb,var(--pass) 16%,transparent);color:var(--ink)!important;font-weight:600;font-size:.88rem}
+.badge::before{content:"";display:inline-block;width:.55rem;height:.55rem;border-radius:50%;background:var(--pass);margin-right:.5rem}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1.5rem;padding:2rem 0;border-top:1px solid var(--line)}
+.stats b{display:block;font:800 2.3rem/1 "Bricolage Grotesque",sans-serif;color:var(--accent)}
+.stats span{display:block;margin-top:.4rem;color:var(--muted);font-size:.92rem}
+.job h4{margin:1.1rem 0 .4rem;font:600 .98rem "IBM Plex Sans",sans-serif;color:var(--accent)}
+.tags.big span{font-size:.95rem;padding:.25rem .8rem;color:var(--ink);background:var(--surface)}
+</style>
 </head>
-
-
 <body>
+<div class="wrap">
+<header class="nav">
+  <b><span class="logo" aria-hidden="true">BK</span>Bibhash Kumar</b>
+  <nav aria-label="Main">
+    <a href="#impact">Impact</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    <div class="themes" role="group" aria-label="Choose theme" id="themes"></div>
+  </nav>
+</header>
 
-    <header>
-        <h1>Bibhash Kumar</h1>
-        <div>Sr.QA Engineer | Bangalore | 7+ Years</div>
-        <div class="contact-info">
-            <span>Email: vivash2009@gmail.com</span>
-            <span>Mobile: +91-9886518198</span>
-            <span>LinkedIn:www.linkedin.com/in/bibhashk94</span>
-        </div>
-    </header>
-    <div class="section card-list">
-        <div class="portfolio-card" style="animation-delay:0.2s">
-            <h2>About Me</h2>
-            <p>
-                Innovative QA professional with 7 years in Healthcare and Banking domains. Adept at Web Services, Automation & API Testing, Selenium, and front-end troubleshooting. Known for collaborative problem-solving in Agile teams.
-            </p>
-        </div>
-        <div class="portfolio-card" style="animation-delay:0.4s">
-            <h2>Technical Skills</h2>
-            <div class="skills">
-                <div class="skill-circle" style="animation-delay:0.2s">
-                    <div class="skill-value">92%</div>
-                    <div class="skill-name">Automation</div>
-                </div>
-                <div class="skill-circle" style="animation-delay:0.4s">
-                    <div class="skill-value">87%</div>
-                    <div class="skill-name">API Testing</div>
-                </div>
-                <div class="skill-circle" style="animation-delay:0.5s">
-                    <div class="skill-value">81%</div>
-                    <div class="skill-name">Frontend Dev</div>
-                </div>
-                <div class="skill-circle" style="animation-delay:0.6s">
-                    <div class="skill-value">84%</div>
-                    <div class="skill-name">SQL/DB</div>
-                </div>
-                <div class="skill-circle" style="animation-delay:0.7s">
-                    <div class="skill-value">94%</div>
-                    <div class="skill-name">Agile/Scrum</div>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-card" style="animation-delay:0.7s">
-            <h2>Project Highlights</h2>
-            <div class="projects-gallery">
-                <div class="project-img-card">
-                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?fit=crop&w=400&q=80" class="project-img" alt="eCaseLink" />
-                    <div class="project-desc">eCaseLink 8.0 – Healthcare EDC Automation</div>
-                </div>
-                <div class="project-img-card">
-                    <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?fit=crop&w=400&q=80" class="project-img" alt="Banking App" />
-                    <div class="project-desc">Banking Web Automation Suite</div>
-                </div>
-				<div class="project-img-card">
-					<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?fit=crop&w=400&q=80" class="project-img" alt="Application Programming Interface" />
-					<div class="project-desc">REST & GraphQL API Test Automation</div>
-				</div>
-                <div class="project-img-card">
-				<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?fit=crop&w=400&q=80" class="project-img" alt="Mobile Automation" />
-				<div class="project-desc">Mobile Automation for App Testing</div>
-		</div>
-            </div>
-        </div>
+<main>
+<div class="hero" id="home">
+  <aside class="card" aria-label="Profile">
+    <div class="avatar"><span aria-hidden="true">BK</span><img src="photo.jpg" alt="Bibhash Kumar" onerror="this.remove()"></div>
+    <div class="cname">Bibhash<br>Kumar</div>
+    <hr>
+    <div class="role">SDET / Quality Engineer</div>
+    <div class="social">
+      <a href="mailto:vivash2009@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+      <a href="tel:+919955450368" aria-label="Phone"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></a>
+      <a href="https://github.com/bibhashtest" aria-label="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></a>
     </div>
-    <div class="section timeline" style="animation-delay:1.2s">
-        <h2>Career Timeline</h2>
-        <div class="timeline-entry">
-            <div class="job-title">Associate| Cognizant Technology Solutions</div>
-            <div class="job-period">Dec 2020 – Present</div>
-        </div>
-        <div class="timeline-entry">
-            <div class="job-title">Quality Control Associate | India Document Solution Pvt Ltd</div>
-            <div class="job-period">Aug 2018 – Sep 2020</div>
-        </div>
+  </aside>
+  <div class="intro">
+    <h1>Hello</h1>
+    <p class="sub">SDET and Quality Engineer, Bengaluru</p>
+    <div class="btns">
+      <a class="pill fill" href="mailto:vivash2009@gmail.com?subject=Opportunity%20for%20SDET%20%2F%20Quality%20Engineer">Hire me</a>
+      <a class="pill" href="#experience">See experience</a>
     </div>
-    <div class="section" style="animation-delay:1.5s">
-        <h2>Education & Certification</h2>
-        <ul>
-            <li>B.E. – Radharaman Engineering College, RGPV Bhopal</li>
-            <li>Scrum Fundamentals Certified</li>
-        </ul>
+    <p class="badge">Open to SDET and Quality Engineering roles</p>
+    <p>I'm Bibhash, an SDET with 7 years 9 months of experience helping banking and healthcare teams ship with confidence. I build Java automation frameworks, test REST APIs and backends, and run it all in CI/CD with quality gates.</p>
+    <p>I lead QA squads, trace every requirement to a test, and sign off releases on evidence. The result is fewer escaped defects and faster, calmer releases.</p>
+  </div>
+</div>
+
+<section class="stats" aria-label="Key numbers">
+  <div><b>7y 9m</b><span>of quality engineering experience</span></div>
+  <div><b>5+</b><span>engineers led and mentored</span></div>
+  <div><b>~75 ms</b><span>lower latency from profiling and tuning</span></div>
+  <div><b>0</b><span>critical production defects on the fraud platform</span></div>
+  <div><b>100%</b><span>requirement coverage through traceability</span></div>
+</section>
+
+<section id="impact">
+  <h2>What I bring to your team</h2>
+  <div class="grid">
+    <div class="box"><h3>Automation that scales</h3>Reusable Java frameworks with Selenium, REST Assured, Appium and JUnit that cut manual effort and duplicate test code.</div>
+    <div class="box"><h3>Release confidence</h3>I lead automation sign-off by reading regression results, defect trends and critical-path coverage, so go or no-go calls rest on evidence.</div>
+    <div class="box"><h3>API and backend depth</h3>REST, JSON, XML and GraphQL validation, service virtualization, negative testing and integration checks across banking channels.</div>
+    <div class="box"><h3>Data you can trust</h3>SQL Server and Oracle checks, stored procedures and reconciliation to prove transactions, fraud decisions and reports match the database.</div>
+    <div class="box"><h3>Leadership</h3>I led a QA team of 5+ in Agile, wrote test strategies, mentored juniors, and joined architecture talks to improve testability.</div>
+    <div class="box"><h3>Shift-left mindset</h3>Early risk analysis, traceability in Jira and PractiTest, and continuous testing in pipelines, with ThousandEyes watching environment health.</div>
+  </div>
+</section>
+
+<section id="ai">
+  <h2>AI-assisted quality engineering</h2>
+  <p style="max-width:68ch">I use GitHub Copilot, Microsoft Copilot, ChatGPT and Claude to move faster without lowering the bar, and I review everything they produce.</p>
+  <div class="tags big"><span>Test case generation</span><span>AI-assisted automation development</span><span>Test data creation</span><span>Requirement analysis</span><span>Defect classification and root cause analysis</span><span>Risk-based test prioritization</span><span>Script optimization and code review</span></div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="box"><h3>Authentication Fraud Detection and In-Session Fraud Monitoring</h3><p>A banking platform that watches logins and live sessions for suspicious behavior, account-takeover attempts and fraudulent transactions in real time. I own automation and quality across web, mobile, API and backend services, for about 5 years.</p><div class="tags"><span>Java</span><span>REST Assured</span><span>Appium</span><span>JMeter</span><span>Azure DevOps</span></div></div>
+    <div class="box"><h3>eCaseLink 8.0 Electronic Data Capture</h3><p>A regulated clinical-trial platform on web, iOS and Android. I tested eCRFs, reports, IWRS, ePRO, Safety System, CTMS and eConsent, compared report output with the database, and automated regression, for about 2 years.</p><div class="tags"><span>Selenium</span><span>SQL</span><span>Mobile</span><span>Regression</span></div></div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="box"><h3>Automation</h3><div class="tags"><span>Java</span><span>Selenium WebDriver</span><span>REST Assured</span><span>Appium</span><span>JUnit</span><span>NUnit</span><span>Playwright</span><span>Data-driven testing</span></div></div>
+    <div class="box"><h3>API and integration</h3><div class="tags"><span>REST APIs</span><span>GraphQL</span><span>JSON / XML</span><span>Postman</span><span>CRUD validation</span><span>Service virtualization</span><span>Negative testing</span></div></div>
+    <div class="box"><h3>CI/CD and DevOps</h3><div class="tags"><span>Azure DevOps</span><span>Jenkins</span><span>GitLab Runner</span><span>GitHub Actions</span><span>Git</span><span>TFS</span><span>Quality gates</span></div></div>
+    <div class="box"><h3>Data and performance</h3><div class="tags"><span>SQL Server</span><span>Oracle</span><span>Stored procedures</span><span>Indexing</span><span>Query optimization</span><span>JMeter</span><span>Profiling</span></div></div>
+    <div class="box"><h3>Quality practices</h3><div class="tags"><span>Test strategy</span><span>Risk-based testing</span><span>Traceability</span><span>Defect management</span><span>Root-cause analysis</span><span>Release readiness</span><span>Shift-left</span></div></div>
+    <div class="box"><h3>Tools and languages</h3><div class="tags"><span>Jira</span><span>PractiTest</span><span>BrowserStack</span><span>SeeTest</span><span>ThousandEyes</span><span>Python</span><span>C#</span><span>JavaScript</span><span>HTML / CSS</span></div></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="job">
+    <div class="when">Dec 2020 to present<br>Bengaluru, India</div>
+    <div>
+      <h3>Associate / Quality Engineer</h3>
+      <div class="co">Cognizant Technology Solutions, Banking and Financial Services</div>
+      <h4>Automation and engineering</h4>
+      <ul>
+        <li>Designed and maintained Java frameworks with Selenium WebDriver, REST Assured, Appium and JUnit for web, mobile, API and end-to-end flows, improving coverage and reducing manual effort.</li>
+        <li>Plugged suites into Azure DevOps, Jenkins, GitLab Runner and GitHub Actions for continuous validation and faster release cycles.</li>
+        <li>Validated transactions and fraud decisions with SQL and backend data checks, and tested responsive behavior on many devices with SeeTest and BrowserStack.</li>
+        <li>Profiled and debugged backend and frontend code, and ran JMeter load tests that cut latency by about 75 ms.</li>
+      </ul>
+      <h4>Leadership and release ownership</h4>
+      <ul>
+        <li>Led and mentored a QA team of 5+ in Agile/Scrum, driving automation adoption, test strategy and continuous improvement.</li>
+        <li>Led automation sign-off for releases from test results, defect trends and application stability, with zero critical production defects through risk management and quality governance.</li>
+        <li>Wrote test strategies, plans and metrics for web, mobile and API work, with 100% requirement coverage tracked in Jira and PractiTest traceability matrices.</li>
+        <li>Led API integration testing that reduced integration issues through strong validation and exception handling.</li>
+        <li>Joined architecture and design discussions, and worked with developers, DevOps, product owners and release teams to deliver features ahead of schedule.</li>
+        <li>Ran Agile ceremonies including stand-ups, sprint planning, reviews, retrospectives and defect triage.</li>
+      </ul>
+      <h4>Monitoring and AI</h4>
+      <ul>
+        <li>Monitored application and environment health with ThousandEyes to spot outages early and reduce downtime impact.</li>
+        <li>Applied Copilot, ChatGPT and Claude to test creation, test data, defect triage, script optimization and root-cause analysis.</li>
+      </ul>
     </div>
-    <div class="section" style="animation-delay:1.6s">
-        <h2>Contact</h2>
-        <ul>
-            <li>Email: vivash2009@gmail.com</li>
-            <li>Mobile: +91-9886518198</li>
-            <li>Location: Bangalore, India</li>
-        </ul>
+  </div>
+  <div class="job">
+    <div class="when">Aug 2018 to Sep 2020</div>
+    <div>
+      <h3>Quality Control Associate / QA Engineer</h3>
+      <div class="co">India Document Solution Pvt. Ltd., Healthcare and Clinical-Trial Software</div>
+      <ul>
+        <li>Tested eCaseLink 8.0 (EDC): case report forms, standard reports, IWRS, ePRO on iOS and Android, Safety System, CTMS, eConsent and participant listings.</li>
+        <li>Wrote test cases from functional and design specifications for eCRFs and reports.</li>
+        <li>Automated functional, integration and regression scenarios with Selenium WebDriver.</li>
+        <li>Used SQL to check data and to compare generated reports with database records.</li>
+        <li>Classified and logged defects by severity and priority, supported the help desk, and retested fixes.</li>
+        <li>Ran smoke tests on critical features and checked responsive behavior on mobile devices.</li>
+      </ul>
     </div>
-    <div class="footer">
-        &copy; 2025 Bibhash Kumar | Portfolio | Last updated Nov 2025
-    </div>
-    <!-- Javascript for staggered animation delay -->
-    <script>
-        // Dynamically trigger cards and skill circles at staggered intervals
-        document.querySelectorAll('.portfolio-card').forEach(function(card, i) {
-            setTimeout(() => {
-                card.style.opacity = 1;
-                card.style.transform = "translateY(0) scale(1.01)";
-            }, (i+1)*190+300);
-        });
-        document.querySelectorAll('.skill-circle').forEach(function(sc, i) {
-            setTimeout(() => {
-                sc.style.opacity = 1;
-                sc.style.transform = "scale(1.07)";
-            }, (i+1)*180+500);
-        });
-    </script>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education and certification</h2>
+  <div class="grid">
+    <div class="box"><h3>B.E., Radharaman Engineering College</h3>RGPV, Bhopal. 77%.</div>
+    <div class="box"><h3>Scrum Fundamentals Certified (SFC)</h3>Agile and Scrum delivery.</div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Let's talk</h2>
+  <p>I'm looking for SDET and Quality Engineering roles where I can own automation and release quality. Send me a note and I'll reply quickly.</p>
+  <p class="btns"><a class="pill fill" href="mailto:vivash2009@gmail.com?subject=Opportunity%20for%20SDET%20%2F%20Quality%20Engineer">Email me</a><a class="pill" href="tel:+919955450368">+91 99554 50368</a></p>
+  <p>vivash2009@gmail.com. Bengaluru, Karnataka, India.</p>
+</section>
+</main>
+
+<footer><div>&copy; <span id="yr">2026</span> Bibhash Kumar</div></footer>
+</div>
+
+<script>
+(function(){
+  document.getElementById("yr").textContent=new Date().getFullYear();
+  var root=document.documentElement,box=document.getElementById("themes");
+  var T=[["ocean","#0B6E78","Ocean light"],["midnight","#4CC3CF","Midnight dark"],["forest","#1F7A4D","Forest light"],["sunset","#B83C0A","Sunset light"],["violet","#A78BFA","Violet dark"]];
+  function set(n,save){
+    root.dataset.theme=n;
+    [].forEach.call(box.children,function(b){b.setAttribute("aria-pressed",b.dataset.t===n)});
+    if(save){try{localStorage.setItem("bk-theme",n)}catch(e){}}
+  }
+  T.forEach(function(t){
+    var b=document.createElement("button");b.type="button";b.className="sw";b.dataset.t=t[0];
+    b.style.background=t[1];b.title=t[2];b.setAttribute("aria-label",t[2]+" theme");
+    b.addEventListener("click",function(){set(t[0],true)});box.appendChild(b);
+  });
+  var saved=null;try{saved=localStorage.getItem("bk-theme")}catch(e){}
+  if(!T.some(function(t){return t[0]===saved}))saved=window.matchMedia("(prefers-color-scheme: dark)").matches?"midnight":"ocean";
+  set(saved,false);
+})();
+</script>
 </body>
-</html>
-
-</body>
-</html>
-
-
-</body>
-
 </html>
